@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Anna's Paradise - Form</title>
+	<link rel="stylesheet" href="css/style1.css">
+	<script src="js/form.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Anna's Paradise</h1>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="food.html">Food</a>
+			<a href="nature.html">Nature</a>
+			<a href="table.html"> Table</a>
+			<a href="form.html" class="active">Form</a>
+		</nav>
+	</header>
+	<main>
+		<section class="single">
+		<h2>Form</h2>
+		<form>
+		<p> Submitting this form won't send the data to the website. This is just to demonstrate my capability to build a form. These days forms can be easily built using platfroms such as <a href="https://www.google.com/forms/about/">Google forms</a>.</p>
+		<fieldset>
+			<legend>Basic Details</legend>
+			<label>First Name:<input type="text" name="fname" required><br></label>
+			<label>Middle Name:<input type="text" name="mname"><br></label>
+			<label>Last Name:<input type="text" name="lname" required><br></label>
+			
+			Gender:
+			<label> <input type="radio" name="gender" id="female" value="name"> Female</label>
+			<label> <input type="radio" name="gender" id="male" value="name"> Male</label>
+			<label> <input type="radio" name="gender" id="others" value="name"> Others</label><br>
+
+			<label>DOB:<input type="date" name="dob" required></label><br>
+			<label>Enter email address:<input type="email" id="email_addr" name="email1" value = "abc@xyz.com" required></label><br>
+			<label>Repeat email address:<input type="email" id="email_repeat" name="email2" required onchange="check()"></label><br>
+			<input type = 'submit' value = "Confirm Emails!" onclick="return check()"><br>
+
+			Select all your favorite fruits:<br>
+			<label> <input type="checkbox" name="fruit1" value="Fruit">Apple</label><br>
+			<label> <input type="checkbox" name="fruit2" value="Fruit">Mango</label><br>
+			<label> <input type="checkbox" name="fruit3" value="Fruit">Orange</label><br>
+			<label> <input type="checkbox" name="fruit4" value="Fruit">Banana</label><br>
+			<label> <input type="checkbox" name="fruit5" value="Fruit">None of the above</label><br>	
+		</fieldset>
+		<fieldset>
+			<legend>Shipping Information</legend>
+			<label for ="shippingName">Name:</label>
+			<input type = "text" name = "shipName" id = "shippingName" required><br/>
+			<label for = "shippingZip">Zip code:</label>
+			<input type = "text" name = "shipZip" id = "shippingZip" pattern = "[0-9]{5}" required><br/>
+		</fieldset>
+			<input type="checkbox" id="same" name="same" onchange= "billingFunction()"/>
+			<label for = "same">Is the Billing Information the Same?</label>
+		<fieldset>					 
+			<legend>Billing Information</legend>
+			<label for ="billingName">Name:</label>
+			<input type = "text" name = "billName" id = "billingName" required><br/>
+			<label for = "billingZip">Zip code:</label>
+			<input type = "text" name = "billZip" id = "billingZip" pattern = "[0-9]{5}" required><br/>
+			<input type = "submit" value = "Verify"/>
+		</fieldset>
+		
+		<input type = "submit" value = "Final Submit"/>	<input type = "reset" value = "Cancel"/>
+		</form>
+		</section>
+	</main>
+	<footer> 
+		<h5>Copyright &copy; Athulya Kunjachan's Sample Website 2020</h5>
+	</footer>
+</body>
+</html>
