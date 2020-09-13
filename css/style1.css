@@ -1,17 +1,17 @@
 body{
-	margin:1%;
-	padding:1%;
+	margin:0.1%;
+	padding:0%;
 }
 header{
-	background: #A3A3A3;
-	background-image: url("../img/watermelon.jpg");
+	background: #3aa8be;
+	/*background-image: url("../img/watermelon.jpg");*/
 	background-size: cover;
 }
 footer{
 	display: inline-block;	
-	background: #a3a3a3;
+	background: #3aa8be;
 	text-align: center;
-	background-image: url("../img/watermelon.jpg");
+	/*background-image: url("../img/watermelon.jpg");*/
 	background-size: cover;
 	box-sizing: border-box;
 	width:100%;
