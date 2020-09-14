@@ -6,6 +6,7 @@ header{
 	background: #3aa8be;
 	/*background-image: url("../img/watermelon.jpg");*/
 	background-size: cover;
+	margin-bottom: 0.1rem;
 }
 footer{
 	display: inline-block;	
@@ -16,7 +17,12 @@ footer{
 	box-sizing: border-box;
 	width:100%;
 }
-
+p{
+	font-family: "";
+	line-height: 1.73rem;
+	margin-left: 1rem;
+	margin-right:1rem;
+}
 h1{
 	color: #000066; 
 	font-variant: all-small-caps;
@@ -47,7 +53,6 @@ section{
 	background: linear-gradient( #3a88be  0%,  #d7e7f3  100%);
 	overflow: auto;
 	font-size: 100%;
-	overflow: auto;
 }
 section>div{
 	box-sizing: border-box;
